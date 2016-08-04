@@ -2,6 +2,7 @@ package com.example;
 
 import java.sql.*;
 import java.math.*;
+
 class ClouderaJDBCHiveExample {
   static String JDBCDriver = "com.cloudera.hive.jdbc4.HS2Driver";
   static String ConnectionURL = "jdbc:hive2://host-10-17-101-195.coe.cloudera.com:10000";
