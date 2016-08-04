@@ -43,15 +43,30 @@
             <version>2.5.2</version>
             <executions>
                 <execution>
+                    <id>inst_1</id>
                     <phase>initialize</phase>
                     <goals>
                         <goal>install-file</goal>
                     </goals>
                     <configuration>
-                        <file>jars/HiveJDBC4.jar</file>
+                        <file>jars/HiveJDBC4/HiveJDBC4.jar</file>
                         <groupId>com.cloudera.hive.jdbc4</groupId>
                         <artifactId>cloudera-hive-jdbc</artifactId>
                         <version>2.5.4</version>
+                        <packaging>jar</packaging>
+                    </configuration>
+                </execution>
+                <execution>
+                    <id>inst_2</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <file>jars/ImpalaJDBC41/ImpalaJDBC41.jar</file>
+                        <groupId>com.cloudera.impala.jdbc4</groupId>
+                        <artifactId>cloudera-impala-jdbc</artifactId>
+                        <version>2.5.16</version>
                         <packaging>jar</packaging>
                     </configuration>
                 </execution>
@@ -89,6 +104,11 @@
       <groupId>com.cloudera.hive.jdbc4</groupId>
       <artifactId>cloudera-hive-jdbc</artifactId>
       <version>2.5.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudera.impala.jdbc4</groupId>
+      <artifactId>cloudera-impala-jdbc</artifactId>
+      <version>2.5.16</version>
     </dependency>
 <!--
     <dependency>
