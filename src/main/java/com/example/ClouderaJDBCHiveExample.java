@@ -5,7 +5,7 @@ import java.math.*;
 
 class ClouderaJDBCHiveExample {
   static String JDBCDriver = "com.cloudera.hive.jdbc4.HS2Driver";
-  static String ConnectionURL = "jdbc:hive2://host-10-17-101-195.coe.cloudera.com:10000";
+  static String ConnectionURL = "jdbc:hive2://hiveserver2-host.com:10000";
   public static void main(String[] args) {
     Connection con = null; Statement stmt = null; ResultSet rs = null;
     String query = "select * from $table";

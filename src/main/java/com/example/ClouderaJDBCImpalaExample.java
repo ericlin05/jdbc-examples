@@ -5,7 +5,7 @@ import java.math.*;
 
 class ClouderaJDBCImpalaExample {
   static String JDBCDriver = "com.cloudera.impala.jdbc41.Driver";
-  static String ConnectionURL = "jdbc:impala://host-10-17-101-197.coe.cloudera.com:21050";
+  static String ConnectionURL = "jdbc:impala://impala-daemon-host.com:21050";
   public static void main(String[] args) {
     Connection con = null; Statement stmt = null; ResultSet rs = null;
     try {
